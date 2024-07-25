@@ -21,7 +21,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        bikePrimary: '#E76F51',
+                        'bike-primary': '#E76F51',
+                        'bike-primary-bg': "rgba(231, 111, 81, 0.10)",
                     }
                 }
             }
@@ -41,7 +42,7 @@
         <article class="w-[95%] md:container mx-auto">
             <!-- navbar starts here -->
             <nav>
-                <div class="navbar bg-base-100">
+                <div class="navbar bg-base-100 px-0">
                     <div class="flex-1">
                         <div class="dropdown">
                             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -59,7 +60,7 @@
                                 <li class="font-medium"><a>Contact</a></li>
                             </ul>
                         </div>
-                        <a class="btn btn-ghost text-3xl">Biker Zone</a>
+                        <a class="text-3xl font-bold">Biker Zone</a>
                     </div>
                     <div class="navbar-center hidden lg:flex">
                         <ul class="menu menu-horizontal px-1 text-base">
@@ -70,17 +71,110 @@
                         </ul>
                     </div>
                     <div>
-                        <a class="btn bg-bikePrimary text-white font-bold px-6 hover:bg-bikePrimary rounded">Login</a>
+                        <a class="btn bg-bike-primary text-white font-bold px-6 hover:bg-bike-primary rounded">Login</a>
                     </div>
                 </div>
             </nav>
             <!-- navbar ends here -->
+            <!-- banner slider start -->
+            <div class="carousel w-full lg:h-[550px] bg-bike-primary-bg rounded lg:mt-10">
+                <!-- slide 1 -->
+                <div id="slide1" class="carousel-item relative w-full ">
+                    <div class="flex gap-6 flex-col lg:flex-row justify-between items-center px-16 py-10 lg:p-24">
+                        <div class="space-y-6 flex-1">
+                            <h2 class="text-5xl font-bold">Ride on R15 V4 <br> with Smile</h2>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            <button
+                                class="btn bg-bike-primary text-white font-bold px-6 hover:bg-bike-primary rounded">Purchase</button>
+                        </div>
+                        <div class="flex-1">
+                            <img src="images/slider/bike1.png" class="w-full lg:w-9/12 mx-auto" />
+                        </div>
+                    </div>
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slide 2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="flex gap-6 flex-col lg:flex-row justify-between items-center px-16 py-10 lg:p-24">
+                        <div class="space-y-6 flex-1">
+                            <h2 class="text-5xl font-bold">Ride on R15 V4 <br> with Smile</h2>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            <button
+                                class="btn bg-bike-primary text-white font-bold px-6 hover:bg-bike-primary rounded">Purchase</button>
+                        </div>
+                        <div class="flex-1">
+                            <img src="images/slider/bike2.png" class="w-full lg:w-9/12 mx-auto" />
+                        </div>
+                    </div>
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slide 3 -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="flex gap-6 flex-col lg:flex-row justify-between items-center px-16 py-10 lg:p-24">
+                        <div class="space-y-6 flex-1">
+                            <h2 class="text-5xl font-bold">Ride on R15 V4 <br> with Smile</h2>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            <button
+                                class="btn bg-bike-primary text-white font-bold px-6 hover:bg-bike-primary rounded">Purchase</button>
+                        </div>
+                        <div class="flex-1">
+                            <img src="images/slider/bike3.png" class="w-full lg:w-9/12 mx-auto" />
+                        </div>
+                    </div>
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slide 4 -->
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div class="flex gap-6 flex-col lg:flex-row justify-between items-center px-16 py-10 lg:p-24">
+                        <div class="space-y-6 flex-1">
+                            <h2 class="text-5xl font-bold">Ride on R15 V4 <br> with Smile</h2>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            <button
+                                class="btn bg-bike-primary text-white font-bold px-6 hover:bg-bike-primary rounded">Purchase</button>
+                        </div>
+                        <div class="flex-1">
+                            <img src="images/slider/bike4.png" class="w-full lg:w-9/12 mx-auto" />
+                        </div>
+                    </div>
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+            <!-- banner slider end -->
         </article>
     </header>
     <!-- header end -->
     <!-- main start -->
     <main class="w-[95%] md:container mx-auto">
-
+        <!-- featured bike section start -->
+        <section class="my-16">
+            <div class="text-center">
+                <h1 class="text-5xl font-semibold mb-1">Featured Bikes In This Year</h1>
+                <p class="text-bike-primary text-sm font-semibold">Best bike collection</p>
+                <div class="w-16 mx-auto bg-bike-primary h-[1px] mt-1 "></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center mt-20">
+                <div><img class="w-full" src="./images/others/feature-bike.png" alt=""></div>
+                <div><img class="w-full" src="./images/others/feature-bike.png" alt=""></div>
+                <div><img class="w-full" src="./images/others/feature-bike.png" alt=""></div>
+            </div>
+        </section>
+        <!-- featured bike section end -->
     </main>
     <!-- main end -->
     <!-- footer start -->
